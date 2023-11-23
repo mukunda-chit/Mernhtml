@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.vl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: aqua;
+  display: inline-block;
+  margin-right: 50px;
+  border: black solid 0px;
+}
+
+.hl{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: silver;
+  display: inline-block;
+  border: black solid 0px ;
+}
+
+ .vli{
+    border-bottom: 1px solid #555;
+}
+
+.vli a{
+  display: block;
+  color: darkblue;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.hli{
+    float: left;
+  border-right:1px solid darkblue;
+}
+
+.hli a{
+  display: block;
+  color: darkblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#activev {
+  background-color: orange;
+  color: white;
+}
+#activeh{
+    background-color: gray;
+  color: white;
+}
+.vli a:hover {
+  background-color: orange;
+  color: whitesmoke;
+}
+
+.hli a:hover{
+    background-color: gray;
+    color: whitesmoke;
+}
+</style>
+<body colspan="2">
+    <p style="display: inline-block;">Vertical Navigation Bar</p>
+    <span style="margin-left: 100px;margin-top: 100px;">
+        Horizontal Navigation Bar
+    </span>
+    <br><br>
+    <ul class="vl">
+        <li class="vli"><a id="activev" href="#home">Home</a></li>
+        <li class="vli"><a href="#Java">Java</a></li>
+        <li class="vli"><a href="#CSS">CSS</a></li>
+        <li class="vli"><a href="#HTML">HTML</a></li>
+        <li class="vli"><a href="#Bootstrap">Bootstrap</a></li>
+    </ul>
+    <ul class="hl">
+        <li class="hli"><a href="#a" id="activeh">Home</a></li>
+        <li class="hli"><a href="#b">Java</a></li>
+        <li class="hli"><a href="#c">HTML</a></li>
+        <li class="hli"><a href="#d">CSS</a></li>
+
+    </ul>
+</body>
+</html>
